@@ -6,7 +6,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import Home from './components/home';
 import reducers from './reducers';
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware()(compose(window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore));
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';

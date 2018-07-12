@@ -4,6 +4,11 @@
     grid-row-gap: 22px;
 
     &__title {
-        //grid-row: title-s/title-e;
+        color: $color-blue;
+        font-family: 'Alegreya';
+        font-size: 34px;
+        font-weight: bold;
+        border-left: 2px solid $color-blue;
+        padding: 20px 40px;
     }
 }
