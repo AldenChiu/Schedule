@@ -1,6 +1,23 @@
 .schedule {
+    grid-column: schedule-s/schedule-e;
+    grid-row: 1/-1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
     display: grid;
     grid-template-rows: 100px repeat(auto-fill, 75px) [progress-s] 76px [progress-e];
     grid-row-gap: 22px;
+    align-items: center;
+    justify-items: center;
 
+
+    __title {
+        border-left: 1px solid $color-subtle-gray;
+        padding-left: 30px;
+        color: white;
+        font-family: 'Alegreya';
+        font-size: 20px;
+        text-align: center;
+    }
 }
