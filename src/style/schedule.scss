@@ -11,13 +11,17 @@
     align-items: center;
     justify-items: center;
 
-    align-content: center;
+    align-content: start;
+
+    padding-top: 237px;
 
     &__title {
-        grid-row: title-s/title-e;
+        position: absolute;
+        top: 154px;
         color: white;
         font-family: 'Alegreya';
         font-size: 20px;
+        font-weight: 300;
         text-align: center;
         border-left: 2px solid $color-subtle-gray;
         padding-left: 30px;
